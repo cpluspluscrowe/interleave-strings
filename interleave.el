@@ -21,8 +21,6 @@
 (defun identity (i) 
   i)
 
-
-
 (defun interleave-characters (c1 c2 built s1-remaining s2-remaining) 
   (cond ((eq nil c1) built) 
         (t (interleave-characters (car s1-remaining) 
@@ -32,7 +30,6 @@
                                   (cdr s1-remaining) 
                                   (cdr s2-remaining)))))
 
-
 (defun interleave (s1 s2) 
   (let ((s1-characters (-map #'identity s1)) 
         (s2-characters (-map #'identity s2))) 
@@ -41,3 +38,5 @@
                                                                (list) 
                                                                (cdr s1-characters) 
                                                                (cdr s2-characters))))))
+                                        ; call (interlave s1 s2)
+                                        ; output "hraacnkkeerr"
