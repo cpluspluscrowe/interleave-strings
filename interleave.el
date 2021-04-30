@@ -38,5 +38,5 @@
                                                                (list) 
                                                                (cdr s1-characters) 
                                                                (cdr s2-characters))))))
-                                        ; call (interlave s1 s2)
+                                        ; call (interleave s1 s2)
                                         ; output "hraacnkkeerr"
